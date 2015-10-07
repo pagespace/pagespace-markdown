@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Markdown Editor</title>
+    <link href="/_plugins/static/pagespace-markdown/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/_plugins/static/pagespace-markdown/simplemde/dist/simplemde.min.css">
+    <style>
+        body {
+            font-size: 16px;
+        }
+        .btn {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            z-index: 100;
+        }
+        .CodeMirror, .CodeMirror-scroll {
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<button type="button" class="btn btn-primary" id="btnSave">Save and close</button>
+<div id="markdown-editor" class="markdown-editor">
+    <textarea id="markdown"></textarea>
+</div>
+
+<script src="/_plugins/static/pagespace-markdown/pagespace-stub.js"></script>
+<script src="/_plugins/static/pagespace-markdown/bower_components/localforage/dist/localforage.min.js"></script>
+<script src="/_plugins/static/pagespace-markdown/simplemde/dist/simplemde.min.js"></script>
+<script src="/_plugins/static/pagespace-markdown/markdown-editor.js"></script>
+
+</body>
+
+</html>

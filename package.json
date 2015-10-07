@@ -1,0 +1,34 @@
+{
+  "name": "pagespace-markdown",
+  "version": "1.0.0",
+  "description": "Markdwon plugin for Pagespace",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pagespace/pagespace-markdown"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node standalone"
+  },
+  "author": "Phil Mander",
+  "license": "MIT",
+  "devDependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "serve-favicon": "^2.3.0"
+  },
+  "pagespace": {
+    "name": "Markdown",
+    "defaultData": {
+      "md": "#New markdown",
+      "wrapperClass": "webcopy"
+    }
+  },
+  "dependencies": {
+    "bluebird": "^2.10.2",
+    "highlight": "^0.2.4",
+    "highlight.js": "^8.8.0",
+    "marked": "^0.3.5"
+  }
+}

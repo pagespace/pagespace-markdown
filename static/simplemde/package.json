@@ -1,0 +1,59 @@
+{
+  "name": "simplemde",
+  "version": "1.7.4",
+  "description": "A simple, beautiful, and embeddable JavaScript markdown editor. Features autosaving and spell checking.",
+  "keywords": [
+    "embeddable",
+    "markdown",
+    "editor",
+    "javascript",
+    "wysiwyg"
+  ],
+  "homepage": "https://github.com/NextStepWebs/simplemde-markdown-editor",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "company": "Next Step Webs, Inc.",
+  "author": {
+    "name": "Wes Cossick",
+    "url": "http://www.WesCossick.com"
+  },
+  "bugs": {
+    "url": "https://github.com/NextStepWebs/simplemde-markdown-editor/issues"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-minify-css": "*",
+    "gulp-uglify": "*",
+    "gulp-concat": "*",
+    "gulp-header": "*",
+    "gulp-jsbeautifier": "*",
+    "gulp-download": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NextStepWebs/simplemde-markdown-editor.git"
+  },
+  "gitHead": "cee66d487301d747d7cfc541d7132cde8b1d4056",
+  "_id": "simplemde@1.7.4",
+  "scripts": {},
+  "_shasum": "886ef45a6c2f92fbad3667b3986e09cf60a35832",
+  "_from": "simplemde@",
+  "_npmVersion": "2.11.3",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "name": "nextstepwebs",
+    "email": "support@nextstepwebs.com"
+  },
+  "dist": {
+    "shasum": "886ef45a6c2f92fbad3667b3986e09cf60a35832",
+    "tarball": "http://registry.npmjs.org/simplemde/-/simplemde-1.7.4.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "nextstepwebs",
+      "email": "support@nextstepwebs.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/simplemde/-/simplemde-1.7.4.tgz"
+}
