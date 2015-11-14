@@ -9,7 +9,7 @@ var favicon = require('serve-favicon');
 
 var app = express();
 
-var data = require('./stubs/data.json');
+var data = require('./stubs/config.json');
 
 app.use(favicon(__dirname + '/favicon.ico'));
 
@@ -18,7 +18,7 @@ app.set('views', './');
 app.engine('hbs', exphbs());
 app.set('view engine', 'hbs');
 
-app.use('/_plugins/static/pagespace-markdown/', express.static('static'));
+app.use('/_static/plugins/pagespace-markdown/', express.static('static'));
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {

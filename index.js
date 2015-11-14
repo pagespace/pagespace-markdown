@@ -5,9 +5,9 @@ var Promise = require('bluebird'),
 var markedAsync = Promise.promisify(marked);
 
 module.exports = {
-    process: function(data, opts) {
+    process: function(config, opts) {
 
-        var markdown = data.md || '';
+        var markdown = config.md || '';
 
         marked.setOptions({
             highlight: function(code, lang) {

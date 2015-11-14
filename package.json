@@ -20,7 +20,7 @@
   },
   "pagespace": {
     "name": "Markdown",
-    "defaultData": {
+    "config": {
       "md": "# New markdown",
       "wrapperClass": "webcopy"
     }
