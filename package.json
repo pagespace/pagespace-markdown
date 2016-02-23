@@ -24,18 +24,24 @@
       "md": "# New markdown",
       "wrapperClass": "webcopy"
     },
-    "schema" : [{
-        "name" : "md",
+
+    "schema" : {
+        "type" : "object",
         "title" : "Markdown",
-        "default" : "# New markdown",
-        "type" : "string",
-        "description" : "Markdown content"
-    }, {
-        "name" : "wrapperClass",
-        "title" : "Wrapper Class",
-        "default" : "webcopy",
-        "type" : "string"
-    }]
+        "properties" : {
+            "md" : {
+                "type" : "string",
+                "title" : "Markdown",
+                "default" : "# New markdown",
+                "description" : "Markdown content"
+            },
+            "wrapperClass" : {
+                "type" : "string",
+                "title" : "Wrapper CSS class",
+                "default" : "webcopy"
+            }
+        }
+    }
   },
   "dependencies": {
     "bluebird": "^2.10.2",
