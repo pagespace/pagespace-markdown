@@ -1,6 +1,6 @@
 {
   "name": "pagespace-markdown",
-  "version": "1.0.2",
+  "version": "0.1.0",
   "description": "Markdwon plugin for Pagespace",
   "repository": {
     "type": "git",
@@ -18,11 +18,29 @@
     "express-handlebars": "^2.0.1",
     "serve-favicon": "^2.3.0"
   },
+  "keywords" : [ "pagespace-plugin"],
   "pagespace": {
-    "name": "Markdown",
     "config": {
       "md": "# New markdown",
       "wrapperClass": "webcopy"
+    },
+
+    "schema" : {
+        "type" : "object",
+        "title" : "Markdown",
+        "properties" : {
+            "md" : {
+                "type" : "string",
+                "title" : "Markdown",
+                "default" : "# New markdown",
+                "description" : "Markdown content"
+            },
+            "wrapperClass" : {
+                "type" : "string",
+                "title" : "Wrapper CSS class",
+                "default" : "webcopy"
+            }
+        }
     }
   },
   "dependencies": {
