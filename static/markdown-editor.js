@@ -6,7 +6,6 @@ window.webcopyEditor = (function () {
     var data = null;
 
     function init() {
-
         localforage.getItem(storageKey).then(function(cachedMd) {
             pagespace.getData().then(function(_data) {
                 if(cachedMd) {
@@ -38,8 +37,6 @@ window.webcopyEditor = (function () {
         });
     }
 
-
-
     function listenForChanges() {
 
         function save() {
@@ -51,13 +48,13 @@ window.webcopyEditor = (function () {
             }).then(function() {
                 //remove draft
                 return localforage.removeItem(storageKey);
-            }).then(function() {
-                pagespace.close();
-            });
+            })
         }
 
-        document.getElementById('btnSave').addEventListener('click', function() {
-            save();
+        pagespace.on('save', function() {
+            save().then(function() {
+                pagespace.close();
+            });
         });
 
         function saveDraft() {
