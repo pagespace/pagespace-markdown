@@ -32,7 +32,7 @@
             "md" : {
                 "type" : "string",
                 "title" : "Markdown",
-                "default" : "# New markdown",
+                "default" : "New markdown include",
                 "description" : "Markdown content"
             },
             "wrapperClass" : {
